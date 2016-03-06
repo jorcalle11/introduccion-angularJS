@@ -1,34 +1,29 @@
 <section class="container" ng-init="loadUsers()">
-	<h3 class="center">Usuarios</h3>
+ 	<h3 class="center">Usuarios</h3>
 	<div class="input-field col s12 m6 offset-m3">
 		<i class="material-icons prefix">search</i>
 		<input id="search" type="text" ng-model="search">
 		<label for="search">Buscar Usuario</label>
 	</div>
-	<div class="row">
-		<div class="col s12 m4" ng-repeat="user in users |orderBy:'name.first'| filter:search">
-			<article class="card medium">
-				<section class="card-image">
-					<figure>
-						<img ng-src="{{user.avatar}}">
-					</figure>
-					<span class="card-title">
-						{{user.name.first}} {{user.name.last}} <br>
-					</span>
-				</section>
-				<section class="card-content">
-					<strong>Ocupación: </strong><span>{{user.ocupation}}</span>
-					<p>{{user.biography}}</p>
-				</section>
-				<section class="card-action center">
-					<a href="/usuarios/{{user.id}}" class="waves-effect waves-light btn light-green darken-1"><i class="material-icons">visibility</i></a>
-					<a href="/usuarios/editar/{{user.id}}" class="waves-effect waves-light btn light-blue darken-1"><i class="material-icons">create</i></a>
-					<button class="waves-effect waves-light btn red darken-1" ng-click="remove(user.id)"><i class="material-icons">delete</i></button>
-				</section>
-			</article>
-		</div>
-	</div>
+	<ul class="collection">
+		<li class="collection-item avatar" ng-repeat="user in users| filter: search">
+			<a href="/usuarios/{{user.id}}">
+				<img ng-src="{{user.avatar}}" class="circle">
+			</a>
+			<span class="title">{{user.name.first}} {{user.name.last}}</span> <br>
+			<small class="ocupation">{{user.ocupation}}</small>
+			<p>{{user.biography}}</p>
+			<div class="secondary-content">
+				<a href="/usuarios/editar/{{user.id}}" class="color-primary">
+					<i class="material-icons">create</i>
+				</a>
+				<span class="color-orange pointer" ng-click="remove(user)">
+					<i class="material-icons">delete</i>
+				</span>
+			</div>
+		</li>
+	</ul>
 	<div class="center red lighten-1 danger" ng-show="!users.length">
-		No hay Usuarios guardados, <a href=""> Agrega uno</a>
+		<i class="material-icons">warning</i> No hay Usuarios guardados, <a href=""> Agrega uno</a>
 	</div>
 </section>

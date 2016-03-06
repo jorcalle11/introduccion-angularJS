@@ -1,21 +1,36 @@
-.card-title{
-	background-color: rgba(0,0,0,0.5);
-	padding: 5px !important;
-	width: 100%;
-	text-align: center;
+.ocupation{
+  color: #0277bd;
 }
-.small{
-	margin-top: 0 !important;
+.circle{
+  width: 70px !important;
+  height: 70px !important;
+  left: 0 !important;
 }
-
 .margin-up{
-	margin-top: 2em;
+  margin-top: 2em;
 }
-
 .danger{
-	padding: 10px;
-	color: #fff;
+  padding: 10px;
+  color: #fff;
 }
 .danger a {
-	color: #0277bd;
+  color: #0277bd;
 }
+.color-primary{
+  color: #0277bd;
+}
+.color-orange{
+  color: #ff6e40 ;
+}
+.pointer{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .card-avatar{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

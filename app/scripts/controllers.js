@@ -3,10 +3,10 @@
 
 	angular
 		.module('myApp')
-		.controller('UsersCtrl',['$scope','$location','Users', usersCtrl])
+		.controller('UsersCtrl',['$scope','$location','Users', UsersCtrl])
 		.controller('UserDetailCtrl',['$scope','$routeParams','$location','Users', UserDetailCtrl]);
 
-	function usersCtrl ($scope, $location, Users) {
+	function UsersCtrl ($scope, $location, Users) {
 		$scope.users = [];
 
 		$scope.loadUsers = function () {
@@ -16,14 +16,12 @@
 		};
 
 		$scope.addUser = function () {
-			$scope.users.push($scope.user);
 			$location.path('/usuarios');
-			$scope.user = {};
 		};
 
-		$scope.remove = function(id) {
+		$scope.remove = function(selectedUser) {
 			$scope.users.forEach(function(user, index){
-				if (user.id === id) {
+				if (user.id === selectedUser.id) {
 					$scope.users.splice(index,1);
 				}
 			});
@@ -41,7 +39,6 @@
 
 		$scope.updateUser = function() {
 			$location.path('/usuarios');
-			$scope.user = {};
 		};
 	}
 

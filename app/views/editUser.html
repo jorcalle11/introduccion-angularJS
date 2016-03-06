@@ -5,30 +5,30 @@
 			<div class="input-field col s12 m6 offset-m3">
 				<i class="material-icons prefix">account_circle</i>
 				<input id="firstName" type="text" class="validate" ng-model="user.name.first" required>
-				<label for="firstName">Nombre</label>
+				<label for="firstName" class="active">Nombre</label>
 			</div>
 			<div class="input-field col s12 m6 offset-m3">
 				<i class="material-icons prefix">account_circle</i>
 				<input id="lastName" type="text" class="validate" ng-model="user.name.last" required>
-				<label for="lastName">Apellido</label>
+				<label for="lastName" class="active">Apellido</label>
 			</div>
 			<div class="input-field col s12 m6 offset-m3">
 				<i class="material-icons prefix">cake</i>
 				<input id="age" type="number" class="validate" ng-model="user.age" min="10" max="100"required>
-				<label for="age">Edad</label>
+				<label for="age" class="active">Edad</label>
 			</div>
 			<div class="input-field col s12 m6 offset-m3">
 				<i class="material-icons prefix">work</i>
 				<input id="ocupation" type="text" class="validate" ng-model="user.ocupation" required>
-				<label for="ocupation">Ocupación</label>
+				<label for="ocupation" class="active">Ocupación</label>
 			</div>
 			<div class="input-field col s12 m6 offset-m3">
 				<i class="material-icons prefix">create</i>
 				<textarea id="biography" class="materialize-textarea" ng-model="user.biography" required></textarea>
-				<label for="biography">Escriba una pequeña biografia</label>
+				<label for="biography" class="active">Escriba una pequeña biografia</label>
 			</div>
 			<div class="col s12 m6 offset-m3 center">
-				<button class="btn-large waves-effect waves-light" ng-disabled="userForm.$invalid" type="submit" name="action">Submit
+				<button class="btn-large waves-effect waves-light" ng-disabled="userForm.$invalid || userForm.$pristine" type="submit" name="action">Submit
 					<i class="material-icons right">send</i>
 				</button>
 			</div>

@@ -16,24 +16,20 @@
 			.error(function(err){
 				defered.reject(err);
 			});
-
 			return defered.promise;
 		};
 
-		users.get = function(id) {
+		users.get = function (id) {
 			var defered = 	$q.defer();
-			var idUser = id-1;
 			$http.get('scripts/users.json').success(function(users){
-				defered.resolve(users.data[idUser]);
+				defered.resolve(users.data[--id]);
 			})
 			.error(function(err){
 				defered.reject(err);
 			});
-
 			return defered.promise;
 		};
 
 		return users;
 	}
-
 })();
