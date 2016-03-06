@@ -4,7 +4,8 @@
   "description": "Aplicación de ejemplo para la charla sobre angularjs en Monteria.js",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/jorcalle11/introduccion-angularJS#readme",
   "devDependencies": {
+    "bower": "^1.7.7",
     "connect-history-api-fallback": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^2.3.1",
