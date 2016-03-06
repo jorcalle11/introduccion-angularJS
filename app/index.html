@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introducción a AngularJS | Jorge Calle</title>
+	<base href="/">
+	<!-- bower:css -->
+	<link rel="stylesheet" href="lib/Materialize/bin/materialize.css" />
+	<!-- endbower -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/stylesheets/main.css">
+	<!-- endinject -->
+</head>
+<body ng-app="myApp">
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper red darken-1">
+				<a href="/usuarios" class="brand-logo" style="margin-left: 5px;">myApp</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/usuarios"><i class="material-icons left">people</i>Usuarios</a></li>
+					<li><a href="/usuarios/nuevo"><i class="material-icons left">person_add</i>Agregar</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="/usuarios"><i class="material-icons left">people</i>Usuarios</a></li>
+					<li><a href="/usuarios/nuevo"><i class="material-icons left">person_add</i>Agregar</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div ng-view></div>
+	</div>
+	<!-- bower:js -->
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular-route/angular-route.js"></script>
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/Materialize/bin/materialize.js"></script>
+	<!-- endbower -->
+	<!-- inject:js -->
+	<script src="/scripts/app.js"></script>
+	<script src="/scripts/controllers.js"></script>
+	<script src="/scripts/init.js"></script>
+	<script src="/scripts/services.js"></script>
+	<!-- endinject -->
+</body>
+</html>

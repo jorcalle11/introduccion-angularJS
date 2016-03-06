@@ -1,0 +1,21 @@
+.card-title{
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px !important;
+	width: 100%;
+	text-align: center;
+}
+.small{
+	margin-top: 0 !important;
+}
+
+.margin-up{
+	margin-top: 2em;
+}
+
+.danger{
+	padding: 10px;
+	color: #fff;
+}
+.danger a {
+	color: #0277bd;
+}

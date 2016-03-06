@@ -1,0 +1,32 @@
+{
+  "name": "introduccion-angularjs",
+  "description": "Aplicación de ejemplo para la charla sobre angularjs en Monteria.js",
+  "main": "index.js",
+  "authors": [
+    "Jorge Calle <jorcalle11@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularJS",
+    "monteria.JS",
+    "meetup",
+    "framework"
+  ],
+  "homepage": "https://github.com/jorcalle11/introduccion-angularJS",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "Materialize": "materialize#^0.97.5"
+  }
+}

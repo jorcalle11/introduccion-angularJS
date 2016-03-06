@@ -1,0 +1,25 @@
+<section ng-init="getUser()">
+<h3 class="center"></h3>
+<div class="row">
+	<aside class="col s12 m4">
+		<figure>
+			<img ng-src="{{user.avatar}}" class="responsive-img">
+		</figure>
+	</aside>
+	<section class="col s12 m7 margin-up">
+		<div class="card">
+			<ul class="collection with-header">
+				<li class="collection-header">
+					<h3 class="center">{{user.name.first}} {{user.name.last}}</h3>
+					<p class="center">{{user.biography}}</p>
+				</li>
+				<li class="collection-item"><strong>Id: </strong>{{user.id}}</li>
+				<li class="collection-item"><strong>Nombre: </strong>{{user.name.first}}</li>
+				<li class="collection-item"><strong>Apellido: </strong>{{user.name.last}}</li>
+				<li class="collection-item"><strong>Edad: </strong>{{user.age}}</li>
+				<li class="collection-item"><strong>Ocupación: </strong>{{user.ocupation}}</li>
+			</ul>
+		</div>
+	</section>
+</div>
+</section>

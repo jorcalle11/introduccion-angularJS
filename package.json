@@ -1,0 +1,35 @@
+{
+  "name": "introduccion-angularjs",
+  "version": "1.0.0",
+  "description": "Aplicación de ejemplo para la charla sobre angularjs en Monteria.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorcalle11/introduccion-angularJS.git"
+  },
+  "keywords": [
+    "angularJS",
+    "monteria.JS",
+    "meetup",
+    "framework"
+  ],
+  "author": "Jorge Calle <jorcalle11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorcalle11/introduccion-angularJS/issues"
+  },
+  "homepage": "https://github.com/jorcalle11/introduccion-angularJS#readme",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-inject": "^3.0.0",
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "wiredep": "^3.0.0"
+  }
+}
